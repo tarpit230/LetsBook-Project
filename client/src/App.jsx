@@ -13,7 +13,7 @@ import PlacePage from './pages/PlacePage';
 import BookingsPage from './pages/BookingsPage';
 import BookingPage from './pages/BookingPage';
 
-axios.defaults.baseURL = 'https://lets-book-project-dpl.vercel.app/';
+axios.defaults.baseURL = 'https://lets-book-project-dpl.vercel.app';
 axios.defaults.withCredentials = true;
 
 function App(){
