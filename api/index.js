@@ -21,10 +21,9 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname+'/uploads'));
 app.use(cors({
+    origin: 'https://lets-book-project-dpl.vercel.app',
     credentials: true,
-    origin: ['https://lets-book-project-clientside.vercel.app'],
-    methods: ["POST", "GET"],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    methods: ["GET", "POST"]
 }));
 
 mongoose.connect(process.env.MONGO_URL);
