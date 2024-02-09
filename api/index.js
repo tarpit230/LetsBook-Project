@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use('/uploads', express.static(__dirname+'/uploads'));
 app.use(cors({
     credentials: true,
-    origin: 'https://lets-book-project-clientside-bi124ryab-arpit-tripathis-projects.vercel.app',
+    origin: 'https://lets-book-project-clientside.vercel.app',
     methods: ["POST", "GET"],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
