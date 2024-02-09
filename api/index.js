@@ -23,7 +23,8 @@ app.use('/uploads', express.static(__dirname+'/uploads'));
 app.use(cors({
     credentials: true,
     origin: 'https://lets-book-project-clientside.vercel.app',
-    methods: ["POST", "GET"]
+    methods: ["POST", "GET"],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 mongoose.connect(process.env.MONGO_URL);
