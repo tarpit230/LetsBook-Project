@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname+'/uploads'));
 app.use(cors({
-    origin: 'https://lets-book-project-clientside.vercel.app',
+    origin: '*',
     credentials: true,
     methods: ["GET", "POST","PUT"]
 }));
