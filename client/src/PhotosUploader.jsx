@@ -24,9 +24,8 @@ export default function PhotosUploader({addedPhotos,onChange}) {
         for(let i=0; i<files.length; i++) {
             data.append('photos', files[i]);
         }
-        const serverUrl = 'https://localhost:4000/upload'; 
-        const httpServerUrl = serverUrl.replace('https:', 'http:');
-        axios.post(httpServerUrl, data, {
+        const serverUrl = 'https://letsbook-m0kt.onrender.com/upload'; 
+        axios.post(serverUrl, data, {
             headers: {'Content-Type':'multipart/form-data'}
         }).then(response => {
             const {data:filenames} = response;
