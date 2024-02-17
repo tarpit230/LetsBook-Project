@@ -37,7 +37,7 @@ function getUserDataFromToken(req){
     })   
 }
 
-app.get('/', (req, res) => {
+app.get('/test', (req, res) => {
     res.json('test ok');
 });
 
